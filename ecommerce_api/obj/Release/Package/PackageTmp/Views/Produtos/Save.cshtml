@@ -1,0 +1,31 @@
+﻿<h2>@ViewBag.title</h2>
+
+<p>Preencha todos os campos</p>
+
+@{
+    string Id;
+    if (Request.QueryString["Id"] == null)
+    {
+        Id = "0";
+    }
+    else
+    {
+        Id = Request.QueryString["Id"];
+    }
+}
+
+@System.Net.WebUtility.HtmlEncode(ViewBag.mensagem)
+
+<form method="post" action="" id="formTag" enctype="multipart/form-data">
+    Nome<br />
+    <input type="text" name="pro_nome" id="pro_nome" value="" />
+    <br /><br />
+    Descrição<br />
+    <textarea name="pro_descricao" id="pro_descricao"></textarea>
+    <br /><br />
+    Arquivo<br />
+    <input type="file" name="arquivo" />
+    <br /><br />
+    <input type="hidden" name="Id" id="Id" value="@Id" />
+    <input type="submit" name="salvar" value="Salvar" />
+</form>

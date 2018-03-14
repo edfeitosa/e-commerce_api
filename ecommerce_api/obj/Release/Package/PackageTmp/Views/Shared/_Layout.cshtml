@@ -1,0 +1,14 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="@Url.Content("~/Content/Style.css")" />
+    <title>@ViewBag.title</title>
+</head>
+<body>
+    <h1>E-Commerce</h1>
+    @Html.ActionLink("[ Página Inicial ]", "Index", "Home")
+    @Html.ActionLink("[ Novos Produtos ]", "Save", "Produtos")
+    @RenderBody()
+</body>
+</html>

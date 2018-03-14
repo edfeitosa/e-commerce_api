@@ -1,0 +1,41 @@
+﻿body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a, a:active, a:hover, a:visited {
+    color: #999;
+    text-decoration: none;
+}
+
+.sucesso {
+    padding: 10px;
+    background-color: #c1d8aa;
+    border: 1px solid #017804;
+    position: relative;
+    border-radius: 3px;
+    color: #017804;
+    margin: 20px 0px 20px 0px;
+    width: 96%;
+}
+
+.erro {
+    padding: 10px;
+    background-color: #FFC2B7;
+    border: 1px solid #f00;
+    position: relative;
+    border-radius: 3px;
+    color: #f00;
+    margin: 20px 0px 20px 0px;
+    width: 96%;
+}
+
+.alerta {
+    padding: 10px;
+    background-color: #FFFFBF;
+    border: 1px solid #c6b149;
+    position: relative;
+    border-radius: 3px;
+    color: #c6b149;
+    margin: 20px 0px 20px 0px;
+    width: 96%;
+}
