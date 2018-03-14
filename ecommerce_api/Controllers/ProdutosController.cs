@@ -36,10 +36,10 @@ namespace ecommerce_api.Controllers
             _produtos.pro_descricao = produtos.pro_descricao;
             var dados = new ProdutosModels().Save(_produtos, arquivo);
             string retorno = "";
-            foreach(var item in dados)
+            foreach (var item in dados)
             {
                 string classe = "";
-                switch(item.HttpStatusCode)
+                switch (item.HttpStatusCode)
                 {
                     case 200: classe = "sucesso"; break;
                     case 400: classe = "erro"; break;

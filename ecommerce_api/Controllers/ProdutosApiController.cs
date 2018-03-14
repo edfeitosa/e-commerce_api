@@ -1,31 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Web;
+using System.Web.Http;
+using System.Web.Http.Cors;
 using System.Net;
 using System.Net.Http;
-using System.Web.Http.Cors;
-using System.Web.Mvc;
 using ecommerce_api.Models;
 
 namespace ecommerce_api.Controllers
 {
     [EnableCors(origins: "*", headers: "*", methods: "*")]
-    public class ProdutosApiController : Controller
+    public class ProdutosApiController : ApiController
     {
-        /*[HttpPost]
-        public IEnumerable<ResponseModels> PostSave(TagsModels tags)
-        {
-            TagsModels _tags = new TagsModels();
-            _tags.Id = Convert.ToInt32(tags.Id);
-            _tags.Nome = tags.Nome;
-            _tags.Descricao = tags.Descricao;
-            return new TagsModels().Save(_tags);
-        }*/
-
         [HttpGet]
-        public ActionResult GetProdutosAll()
+        public IEnumerable<ProdutosModels> GetProdutosAll(int id)
         {
-            return Json(new ProdutosModels().Read(Convert.ToInt32(0)), JsonRequestBehavior.AllowGet);
+            return new ProdutosModels().Read(id);
         }
     }
 }

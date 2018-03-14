@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using System.Web.Mvc;
 
 namespace ecommerce_api
 {
@@ -16,9 +17,9 @@ namespace ecommerce_api
             config.MapHttpAttributeRoutes();
 
             config.Routes.MapHttpRoute(
-                name: "DefaultApi",
-                routeTemplate: "ProdutosApi/{controller}/{id}",
-                defaults: new { id = RouteParameter.Optional }
+                name: "ecommerce_api",
+                routeTemplate: "Api/{controller}/{action}/{id}",
+                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
 
             var formatters = GlobalConfiguration.Configuration.Formatters;

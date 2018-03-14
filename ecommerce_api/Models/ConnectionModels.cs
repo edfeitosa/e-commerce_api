@@ -9,7 +9,7 @@ namespace ecommerce_api.Models
     {
         public string Connection()
         {
-            return "Database=ecommerce; Data Source=localhost; User Id=root; Password=040810; pooling=false".ToString();
+            return "Database=ecommerce; Data Source=localhost; User Id=root; Password=; pooling=false".ToString();
         }
     }
 }
