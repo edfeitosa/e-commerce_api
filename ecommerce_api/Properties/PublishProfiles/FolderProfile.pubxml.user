@@ -13,10 +13,10 @@ ao editar este arquivo MSBuild. Para saber mais sobre isso, visite https://go.mi
       <publishTime>03/14/2018 10:07:26</publishTime>
     </File>
     <File Include="bin/ecommerce_api.dll">
-      <publishTime>03/14/2018 12:29:34</publishTime>
+      <publishTime>03/14/2018 16:22:21</publishTime>
     </File>
     <File Include="bin/ecommerce_api.pdb">
-      <publishTime>03/14/2018 12:29:34</publishTime>
+      <publishTime>03/14/2018 16:22:21</publishTime>
     </File>
     <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
       <publishTime>03/14/2018 10:07:27</publishTime>

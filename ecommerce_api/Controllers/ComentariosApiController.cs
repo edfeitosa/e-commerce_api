@@ -20,7 +20,7 @@ namespace ecommerce_api.Controllers
         }
 
         [HttpPost]
-        public IEnumerable<ResponseModels> PostSave(ComentariosModels comentarios)
+        public IEnumerable<ResponseModels> GetComentariosSave(ComentariosModels comentarios)
         {
             ComentariosModels _comentarios = new ComentariosModels();
             _comentarios.pro_id = Convert.ToInt32(comentarios.pro_id);
